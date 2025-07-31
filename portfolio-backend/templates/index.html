@@ -505,6 +505,17 @@ window.addEventListener("resize", () => {
   };
 </script>
 
+fetch("https://portfolio-backend-rznb.onrender.com/contact", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    name: nameValue,
+    email: emailValue,
+    message: messageValue,
+  }),
+});
 
 
 <!-- Font Awesome CDN -->
